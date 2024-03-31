@@ -1,0 +1,88 @@
+/* MyNavbar.css */
+
+/* Navbar container */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Navbar toggle button */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navbar menu */
+.navbar-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu.open {
+  display: flex;
+}
+
+/* Navbar menu items */
+.navbar-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  padding: 0 1rem;
+}
+
+/* Navbar menu items on the right */
+.navbar-right {
+  margin-left: auto;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: none;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .nav-item {
+    padding: 1rem;
+    border-bottom: 1px solid #555;
+  }
+
+  .navbar-right {
+    margin-left: 0;
+  }
+}
