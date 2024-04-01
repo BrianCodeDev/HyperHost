@@ -2,11 +2,31 @@
 
 /* Navbar container */
 .navbar {
-  background-color: #333;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(37, 37, 37);
   padding: 1rem 0;
 }
+.navbar .navbar-nav {
+  list-style-type: none;
 
+}
+.navbar .navbar-nav li {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navbar .navbar-nav button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  margin-right: 50px;
+
+}
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -16,6 +36,7 @@
 /* Navbar brand */
 .navbar-brand {
   font-weight: bold;
+  padding-left: 20px;
 }
 
 /* Navbar toggle button */
@@ -56,7 +77,9 @@
 .navbar-right {
   margin-left: auto;
 }
-
+.navbar-right li {
+  cursor: pointer;
+}
 /* Media query for small screens */
 @media (max-width: 768px) {
   .navbar-toggle {
@@ -85,4 +108,106 @@
   .navbar-right {
     margin-left: 0;
   }
+}
+.container {
+  width: 100%;
+  max-width: 1400px; /* Bootstrap's container max-width */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header-title {
+  background-image: url("../src/images/world.svg");
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header-title .container {
+  display: flex;
+  position: relative;
+  height: 600px;
+
+}
+
+.header-content-one h2 {
+  font-size: 40px;
+  width: 600px;
+}
+.header-content-one h5 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.header-content-one h5 .sale {
+  color: #3634A3;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.header-content-two  {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.main {
+  text-align: center;
+  margin-top: 140px;
+}
+.main .pricing {
+  text-align: center;
+  margin-top: 100px;
+}
+.pricing-display {
+  display: flex;
+  justify-content: center;
+}
+.pricing-display .pricing-card {
+  width: 300px;
+  border: 2px solid #3634A3;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 10px;
+  
+}
+.pricing-display .pricing-one {
+  margin-top: 50px;
+}
+.pricing-display .pricing-three {
+  margin-top: 50px;
+}
+.pricing-display .pricing-two {
+  margin-bottom: 50px;
+  height: 500px;
+}
+.pricing-display .pricing-card .pricing-card-title-two {
+  background-color: #3634A3;
+  color: white;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-content: center;
+}
+.pricing-display .pricing-card .pricing-card-title-one {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-content: center;
+  border: 2px solid black;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.pricing-display .pricing-card .pricing-card-title-three {
+  background-color: #ffffff;
+  color: rgb(8, 8, 8);
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-content: center;
+  border: 2px solid black;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
